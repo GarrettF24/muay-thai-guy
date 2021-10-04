@@ -26,8 +26,8 @@
 |     React     | a free and open-source front-end JavaScript library for building user interfaces or UI components                                                               |
 | React Router  | Router enables the navigation among views of various components in a React Application, allows changing the browser URL, and keeps the UI in sync with the URL. |
 | Ruby on Rails | an open source framework for Web development in Ruby, an object-oriented programming (OOP) language similar to Perl and Python.                                 |
-|               | _Lorem ipsum dolor sit amet, consectetur._                                                                                                                      |
-|               | _Lorem ipsum dolor sit amet, consectetur._                                                                                                                      |
+|      jwt      | For token based authentication                                                                                                                                  |
+|    bcrypt     | Password encryption...                                                                                                                                          |
 
 <br>
 
