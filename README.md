@@ -154,7 +154,7 @@ src
 
 #### ERD Model
 
-![ERD Sample](https://res.cloudinary.com/dyfvqwppd/image/upload/v1633362201/Screen_Shot_2021-10-04_at_11.43.03_AM_bw2oke.png)
+![ERD Sample](https://res.cloudinary.com/dyfvqwppd/image/upload/v1633364029/Screen_Shot_2021-10-04_at_12.13.30_PM_rcupz2.png)
 <br>
 
 ---
