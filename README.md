@@ -35,33 +35,13 @@
 
 #### Wireframes
 
-![Dummy Link](url)
+![Desktop](https://res.cloudinary.com/dyfvqwppd/image/upload/v1633361964/Screen_Shot_2021-10-04_at_11.38.20_AM_qe3fpq.png)
 
-- Desktop Landing
-
-![Dummy Link](url)
-
-- Desktop Hero
-
-![Dummy Link](url)
-
-- Resource Index
-
-![Dummy Link](url)
-
-- Resource Show
-
-![Dummy Link](url)
-
-- Tablet Resource Index
-
-![Dummy Link](url)
-
-- Mobile Resource Index
+![Mobile](https://res.cloudinary.com/dyfvqwppd/image/upload/v1633362114/Screen_Shot_2021-10-04_at_11.41.43_AM_ciymll.png)
 
 #### Component Tree
 
-[Component Tree Sample](https://gist.git.generalassemb.ly/davidtwhitlatch/414107e2560ae0bb65e233570f2fe056#file-component-tree-png)
+![Component Tree Sample](https://res.cloudinary.com/dyfvqwppd/image/upload/v1633362306/Screen_Shot_2021-10-04_at_11.44.56_AM_dj1n2e.png)
 
 #### Component Architecture
 
@@ -176,7 +156,7 @@ src
 
 #### ERD Model
 
-[ERD Sample](https://drive.google.com/file/d/1kLyQTZqfcA4jjKWQexfEkG2UspyclK8Q/view)
+![ERD Sample](https://res.cloudinary.com/dyfvqwppd/image/upload/v1633362201/Screen_Shot_2021-10-04_at_11.43.03_AM_bw2oke.png)
 <br>
 
 ---
