@@ -19,8 +19,6 @@
 
 ### Libraries and Dependencies
 
-> Use this section to list all supporting libraries and dependencies, and their role in the project. Below is an example - this needs to be replaced!
-
 |    Library    | Description                                                                                                                                                     |
 | :-----------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 |     React     | a free and open-source front-end JavaScript library for building user interfaces or UI components                                                               |
