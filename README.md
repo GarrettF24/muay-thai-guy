@@ -33,15 +33,6 @@
 
 #### Wireframes
 
-<<<<<<< HEAD
-![imgAlt](https://res.cloudinary.com/dyfvqwppd/image/upload/v1633361964/Screen_Shot_2021-10-04_at_11.38.20_AM_qe3fpq.png)
-
-![imgAlt](https://res.cloudinary.com/dyfvqwppd/image/upload/v1633362114/Screen_Shot_2021-10-04_at_11.41.43_AM_ciymll.png)
-
-#### Component Tree
-
-![Component Tree](https://res.cloudinary.com/dyfvqwppd/image/upload/v1633362306/Screen_Shot_2021-10-04_at_11.44.56_AM_dj1n2e.png)
-=======
 ![Desktop](https://res.cloudinary.com/dyfvqwppd/image/upload/v1633361964/Screen_Shot_2021-10-04_at_11.38.20_AM_qe3fpq.png)
 
 ![Mobile](https://res.cloudinary.com/dyfvqwppd/image/upload/v1633362114/Screen_Shot_2021-10-04_at_11.41.43_AM_ciymll.png)
@@ -49,7 +40,6 @@
 #### Component Tree
 
 ![Component Tree Sample](https://res.cloudinary.com/dyfvqwppd/image/upload/v1633362306/Screen_Shot_2021-10-04_at_11.44.56_AM_dj1n2e.png)
->>>>>>> fcbf83e73f36c836d482122cdd95b633b80db942
 
 #### Component Architecture
 
@@ -164,11 +154,8 @@ src
 
 #### ERD Model
 
-<<<<<<< HEAD
-![ERDAlt](https://res.cloudinary.com/dyfvqwppd/image/upload/v1633362201/Screen_Shot_2021-10-04_at_11.43.03_AM_bw2oke.png)
-=======
 ![ERD Sample](https://res.cloudinary.com/dyfvqwppd/image/upload/v1633364029/Screen_Shot_2021-10-04_at_12.13.30_PM_rcupz2.png)
->>>>>>> fcbf83e73f36c836d482122cdd95b633b80db942
+
 <br>
 
 ---
