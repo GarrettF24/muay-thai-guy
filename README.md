@@ -26,8 +26,8 @@
 |     React     | a free and open-source front-end JavaScript library for building user interfaces or UI components                                                               |
 | React Router  | Router enables the navigation among views of various components in a React Application, allows changing the browser URL, and keeps the UI in sync with the URL. |
 | Ruby on Rails | an open source framework for Web development in Ruby, an object-oriented programming (OOP) language similar to Perl and Python.                                 |
-|               | _Lorem ipsum dolor sit amet, consectetur._                                                                                                                      |
-|               | _Lorem ipsum dolor sit amet, consectetur._                                                                                                                      |
+|      jwt      | For token based authentication                                                                                                                                  |
+|    bcrypt     | Password encryption...                                                                                                                                          |
 
 <br>
 
@@ -148,35 +148,35 @@ src
 
 > Use this section to estimate the time necessary to build out each of the components you've described above.
 
-| Task                        | Priority | Estimated Time | Time Invested | Actual Time |
-| --------------------------- | :------: | :------------: | :-----------: | :---------: |
-| Admin Authentication        |    H     |      2hr       | :-----------: | :---------: |
-| Create CRUD Actions Backend |    H     |      3hr       |     :--:      |    :--:     |
-| Create Data                 |    H     |      1hr       | :-----------: | :---------: |
-| Routes for backend          |    H     |      1hr       | :-----------: | :---------: |
-| Frontend api(Services)      |    H     |      2hr       | :-----------: | :---------: |
-| App.js functionality        |    H     |      1hr       | :-----------: | :---------: |
-| MainContainer functionality |    H     |      1hr       | :-----------: | :---------: |
-| Funct Home                  |    H     |      1hr       | :-----------: | :---------: |
-| Funct Products              |    H     |      1hr       | :-----------: | :---------: |
-| Funct ProductDetail         |    H     |      1hr       | :-----------: | :---------: |
-| Funct Posts                 |    H     |      1hr       | :-----------: | :---------: |
-| Funct PostDetail            |    H     |      1hr       | :-----------: | :---------: |
-| About                       |    H     |      1hr       | :-----------: | :---------: |
-| Funct Create/Edit           |    H     |      1hr       | :-----------: | :---------: |
-| Funct Nav                   |    H     |      1hr       | :-----------: | :---------: |
-| Funct Footer                |    H     |      1hr       | :-----------: | :---------: |
-| Funct Layout                |    H     |      1hr       | :-----------: | :---------: |
-| Funct ProductCard           |    H     |      1hr       | :-----------: | :---------: |
-| Funct Post                  |    H     |      1hr       | :-----------: | :---------: |
-| Funct Search                |    H     |      1hr       | :-----------: | :---------: |
-| Funct ProductForm           |    H     |      2hr       | :-----------: | :---------: |
-| Funct PostForm              |    H     |      2hr       | :-----------: | :---------: |
-| Funct AboutMe + Styling     |    H     |      1hr       | :-----------: | :---------: |
-| Funct SigninForm            |    H     |      1hr       | :-----------: | :---------: |
-| Styling Components          |    H     |      ---       | :-----------: | :---------: |
-| Styling Screens             |    H     |      ---       | :-----------: | :---------: |
-| Total                       |          |      ---       | :-----------: | :---------: |
+| Task                          | Priority | Estimated Time | Time Invested | Actual Time |
+| ----------------------------- | :------: | :------------: | :-----------: | :---------: |
+| Admin Authentication          |    H     |      2hr       | :-----------: | :---------: |
+| Create CRUD Actions Backend   |    H     |      3hr       |     :--:      |    :--:     |
+| Create Data                   |    H     |      1hr       | :-----------: | :---------: |
+| Routes for backend            |    H     |      1hr       | :-----------: | :---------: |
+| Frontend api(Services)        |    H     |      2hr       | :-----------: | :---------: |
+| App.js functionality          |    H     |      1hr       | :-----------: | :---------: |
+| MainContainer functionality   |    H     |      1hr       | :-----------: | :---------: |
+| Funct Home + Styling          |    H     |      3hr       | :-----------: | :---------: |
+| Funct Products + Styling      |    H     |      3hr       | :-----------: | :---------: |
+| Funct ProductDetail + Styling |    H     |      3hr       | :-----------: | :---------: |
+| Funct Posts + Styling         |    H     |      3hr       | :-----------: | :---------: |
+| Funct PostDetail + Styling    |    H     |      3hr       | :-----------: | :---------: |
+| About + Styling               |    H     |      3hr       | :-----------: | :---------: |
+| Funct Create/Edit + Styling   |    H     |      3hr       | :-----------: | :---------: |
+| Funct Nav + Styling           |    H     |      3hr       | :-----------: | :---------: |
+| Funct Footer + Styling        |    H     |      3hr       | :-----------: | :---------: |
+| Funct Layout + Styling        |    H     |      3hr       | :-----------: | :---------: |
+| Funct ProductCard + Styling   |    H     |      3hr       | :-----------: | :---------: |
+| Funct Post + Styling          |    H     |      3hr       | :-----------: | :---------: |
+| Funct Search + Styling        |    H     |      1hr       | :-----------: | :---------: |
+| Funct ProductForm + Styling   |    H     |      4hr       | :-----------: | :---------: |
+| Funct PostForm + Styling      |    H     |      4hr       | :-----------: | :---------: |
+| Funct AboutMe + Styling       |    H     |      1hr       | :-----------: | :---------: |
+| Funct SigninForm + Styling    |    H     |      1hr       | :-----------: | :---------: |
+| Styling Components            |    H     |      ---       | :-----------: | :---------: |
+| Styling Screens               |    H     |      ---       | :-----------: | :---------: |
+| Total                         |          |      ---       | :-----------: | :---------: |
 
 <br>
 
