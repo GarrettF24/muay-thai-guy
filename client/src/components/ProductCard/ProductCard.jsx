@@ -1,6 +1,6 @@
 import "./ProductCard.css"
 import { Link } from "react-router-dom"
-import Pictures from "../../assets/logo.png"
+
 export default function ProductCard(props) {
   return (
     <div className="product-card">
