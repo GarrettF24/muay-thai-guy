@@ -82,9 +82,6 @@ src
           |__SigninForm.jsx
           |__SigninForm.css
 |__ screens/
-      |__ Home
-          |__Home.jsx
-          |__Home.css
       |__ Products
           |__Products.jsx
           |__Products.css
