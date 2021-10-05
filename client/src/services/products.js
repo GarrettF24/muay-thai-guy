@@ -1,4 +1,4 @@
-import api from "./config"
+import api from "./apiConfig"
 
 export const getAllProducts = async () => {
   const resp = await api.get("/products")
