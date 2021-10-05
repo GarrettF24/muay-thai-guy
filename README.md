@@ -25,7 +25,9 @@
 | React Router  | Router enables the navigation among views of various components in a React Application, allows changing the browser URL, and keeps the UI in sync with the URL. |
 | Ruby on Rails | an open source framework for Web development in Ruby, an object-oriented programming (OOP) language similar to Perl and Python.                                 |
 |      jwt      | For token based authentication                                                                                                                                  |
-|    bcrypt     | Password encryption...                                                                                                                                          |
+|    bcrypt     | Password encryption                                                                                                                                             |
+|     axios     | Api calls and functionality                                                                                                                                     |
+|     Faker     | Creates test data                                                                                                                                               |
 
 <br>
 
