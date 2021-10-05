@@ -4,7 +4,8 @@ import Layout from "./components/Layout/Layout"
 import Login from "./screens/Login/Login"
 import { useState } from "react"
 
-import { loginUser } from "./services/auth"
+import { loginUser, registerUser } from "./services/auth"
+import Signup from "./screens/Signup/Signup"
 
 function App() {
   const [currentUser, setCurrentUser] = useState(null)
@@ -14,12 +15,20 @@ function App() {
     setCurrentUser(userData)
   }
 
+  const handleRegister = async (registerData) => {
+    const userData = await registerUser(registerData)
+    setCurrentUser(userData)
+  }
+
   return (
     <div className="App">
       <Layout>
         <Switch>
           <Route path="/login">
             <Login handleLogin={handleLogin} />
+          </Route>
+          <Route path="/signup">
+            <Signup handleRegister={handleRegister} />
           </Route>
         </Switch>
       </Layout>
