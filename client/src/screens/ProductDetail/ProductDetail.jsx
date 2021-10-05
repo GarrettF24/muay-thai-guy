@@ -29,7 +29,7 @@ export default function ProductDetail(props) {
       </div>
       <div className="product-crud">
         {props.currentUser ? (
-          <div className="crud-btns">
+          <div className="crud-buttons">
             <button>Edit</button>
             <button>Delete</button>
           </div>
