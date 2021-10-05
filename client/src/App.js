@@ -2,13 +2,21 @@ import "./App.css"
 import { Switch, Route } from "react-router"
 import Layout from "./components/Layout/Layout"
 import Login from "./screens/Login/Login"
-import { useState } from "react"
-
-import { loginUser, registerUser } from "./services/auth"
 import Signup from "./screens/Signup/Signup"
+import { useState, useEffect } from "react"
+
+import { loginUser, registerUser, verifyUser } from "./services/auth"
 
 function App() {
   const [currentUser, setCurrentUser] = useState(null)
+
+  useEffect(() => {
+    const handleVerify = async () => {
+      const userData = await verifyUser()
+      setCurrentUser(userData)
+    }
+    handleVerify()
+  }, [])
 
   const handleLogin = async (loginData) => {
     const userData = await loginUser(loginData)
