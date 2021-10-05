@@ -3,3 +3,8 @@
   display: flex;
   margin: 2%;
 }
+
+.product-image {
+  width: 20vw;
+  height: 25vh;
+}

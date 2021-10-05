@@ -24,59 +24,59 @@ Post.create!(title: 'How to be respectful',
 
 @posts = Post.all
 
-Product.create!(name: 'Head Gear', category: 'Gear', brand: 'Everlast', image_url: 'everlast_head_gear.jpeg',
+Product.create!(name: 'Head Gear', category: 'Gear', brand: 'Everlast', image_url: 'https://res.cloudinary.com/dyfvqwppd/image/upload/v1633465029/everlast_head_gear_dfeihx.jpg',
                 review: Faker::Lorem.paragraph(sentence_count: 4, supplemental: true, random_sentences_to_add: 4), user: @admin)
-Product.create!(name: 'Heavy Bag', category: 'Equipment', brand: 'Everlast', image_url: 'everlast_heavy_bag.jpeg',
+Product.create!(name: 'Heavy Bag', category: 'Equipment', brand: 'Everlast', image_url: 'https://res.cloudinary.com/dyfvqwppd/image/upload/v1633465030/everlast_heavy_bag_mpiu0o.jpg',
                 review: Faker::Lorem.paragraph(sentence_count: 3, supplemental: true, random_sentences_to_add: 4), user: @admin)
-Product.create!(name: 'Thai Pads', category: 'Gear', brand: 'Everlast', image_url: 'everlast_pads.jpeg',
+Product.create!(name: 'Thai Pads', category: 'Gear', brand: 'Everlast', image_url: 'https://res.cloudinary.com/dyfvqwppd/image/upload/v1633465030/everlast_pads_mmvftt.jpg',
                 review: Faker::Lorem.paragraph(sentence_count: 2, supplemental: true, random_sentences_to_add: 4), user: @admin)
-Product.create!(name: 'Speed Bag', category: 'Equipment', brand: 'Everlast', image_url: 'everlast_speed_bag.jpeg',
+Product.create!(name: 'Speed Bag', category: 'Equipment', brand: 'Everlast', image_url: 'https://res.cloudinary.com/dyfvqwppd/image/upload/v1633465033/everlast_speed_bag_bkadqz.jpg',
                 review: Faker::Lorem.paragraph(sentence_count: 3, supplemental: true, random_sentences_to_add: 4), user: @admin)
 
 Product.create!(name: 'Wall Mount Training Bag', category: 'Equipment', brand: 'Everlast',
-                image_url: 'everlast_wall_mount.jpeg', review: Faker::Lorem.paragraph(sentence_count: 2, supplemental: true, random_sentences_to_add: 4), user: @admin)
+                image_url: 'https://res.cloudinary.com/dyfvqwppd/image/upload/v1633465032/everlast_wall_mount_dpueb1.jpg', review: Faker::Lorem.paragraph(sentence_count: 2, supplemental: true, random_sentences_to_add: 4), user: @admin)
 
-Product.create!(name: 'Hand Wraps', category: 'Gear', brand: 'Everlast', image_url: 'everlast_wraps.jpeg',
+Product.create!(name: 'Hand Wraps', category: 'Gear', brand: 'Everlast', image_url: 'https://res.cloudinary.com/dyfvqwppd/image/upload/v1633465032/everlast_wraps_abht70.jpg',
                 review: Faker::Lorem.paragraph(sentence_count: 2, supplemental: true, random_sentences_to_add: 4), user: @admin)
-Product.create!(name: '16oz Gloves(Red/Black)', category: 'Gear', brand: 'Everlast', image_url: 'everlast16.jpeg',
+Product.create!(name: '16oz Gloves(Red/Black)', category: 'Gear', brand: 'Everlast', image_url: 'https://res.cloudinary.com/dyfvqwppd/image/upload/v1633465029/everlast_16_tflkh6.jpg',
                 review: Faker::Lorem.paragraph(sentence_count: 2, supplemental: true, random_sentences_to_add: 4), user: @admin)
-Product.create!(name: 'Mouth Guard', category: 'Gear', brand: 'Everlast', image_url: 'everlast_mouthguard.jpeg',
+Product.create!(name: 'Mouth Guard', category: 'Gear', brand: 'Everlast', image_url: 'https://res.cloudinary.com/dyfvqwppd/image/upload/v1633465030/everlast_mouthguard_unsujd.jpg',
                 review: Faker::Lorem.paragraph(sentence_count: 2, supplemental: true, random_sentences_to_add: 4), user: @admin)
-Product.create!(name: 'Rash Guard', category: 'Apparel', brand: 'Everlast', image_url: 'everlast_rashguard.jpeg',
+Product.create!(name: 'Rash Guard', category: 'Apparel', brand: 'Everlast', image_url: 'https://res.cloudinary.com/dyfvqwppd/image/upload/v1633465033/everlast_rashguard_pbqtbi.jpg',
                 review: Faker::Lorem.paragraph(sentence_count: 4, supplemental: true, random_sentences_to_add: 4), user: @admin)
-Product.create!(name: 'Shin Pads', category: 'Gear', brand: 'Everlast', image_url: 'everlast_shin_pads.jpeg',
+Product.create!(name: 'Shin Pads', category: 'Gear', brand: 'Everlast', image_url: 'https://res.cloudinary.com/dyfvqwppd/image/upload/v1633465034/everlast_shin_pads_kuqb0e.jpg',
                 review: Faker::Lorem.paragraph(sentence_count: 3, supplemental: true, random_sentences_to_add: 4), user: @admin)
-Product.create!(name: '16oz Gloves(Dark Green)', category: 'Gear', brand: 'Fairtex', image_url: 'fairtex_gloves.jpeg',
+Product.create!(name: '16oz Gloves(Dark Green)', category: 'Gear', brand: 'Fairtex', image_url: 'https://res.cloudinary.com/dyfvqwppd/image/upload/v1633465034/fairtex_gloves_ik1sht.jpg',
                 review: Faker::Lorem.paragraph(sentence_count: 5, supplemental: true, random_sentences_to_add: 4), user: @admin)
-Product.create!(name: 'Thai Shorts', category: 'Apparel', brand: 'Fairtex', image_url: 'fairtex_shorts.jpeg',
+Product.create!(name: 'Thai Shorts', category: 'Apparel', brand: 'Fairtex', image_url: 'https://res.cloudinary.com/dyfvqwppd/image/upload/v1633465034/fairtex_shorts_umgod7.jpg',
                 review: Faker::Lorem.paragraph(sentence_count: 2, supplemental: true, random_sentences_to_add: 4), user: @admin)
-Product.create!(name: 'Shin Pads', category: 'Gear', brand: 'Fairtex', image_url: 'fairtex_shinpads.jpeg',
+Product.create!(name: 'Shin Pads', category: 'Gear', brand: 'Fairtex', image_url: 'https://res.cloudinary.com/dyfvqwppd/image/upload/v1633465034/fairtex_shinpads_kw5iqz.jpg',
                 review: Faker::Lorem.paragraph(sentence_count: 2, supplemental: true, random_sentences_to_add: 4), user: @admin)
-Product.create!(name: 'Belly Pad', category: 'Gear', brand: 'Fairtex', image_url: 'fairtex_bellypad.jpeg',
+Product.create!(name: 'Belly Pad', category: 'Gear', brand: 'Fairtex', image_url: 'https://res.cloudinary.com/dyfvqwppd/image/upload/v1633465033/fairtex_bellypad_ssceqt.jpg',
                 review: Faker::Lorem.paragraph(sentence_count: 2, supplemental: true, random_sentences_to_add: 4), user: @admin)
-Product.create!(name: 'Focus Mitts', category: 'Gear', brand: 'Fairtex', image_url: 'fairtex_focus_mitts.jpeg',
+Product.create!(name: 'Focus Mitts', category: 'Gear', brand: 'Fairtex', image_url: 'https://res.cloudinary.com/dyfvqwppd/image/upload/v1633465034/fairtex_focus_mitts_ksmtb9.jpg',
                 review: Faker::Lorem.paragraph(sentence_count: 2, supplemental: true, random_sentences_to_add: 4), user: @admin)
-Product.create!(name: 'Heavy Bag', category: 'Equipment', brand: 'Fairtex', image_url: 'fairtex_heavybag.jpeg',
+Product.create!(name: 'Heavy Bag', category: 'Equipment', brand: 'Fairtex', image_url: 'https://res.cloudinary.com/dyfvqwppd/image/upload/v1633465034/fairtex_heavybag_j0ndwe.jpg',
                 review: Faker::Lorem.paragraph(sentence_count: 4, supplemental: true, random_sentences_to_add: 4), user: @admin)
-Product.create!(name: 'Duffel Bag', category: 'Apparel', brand: 'Fairtex', image_url: 'fairtex_bag.jpeg',
+Product.create!(name: 'Duffel Bag', category: 'Apparel', brand: 'Fairtex', image_url: 'https://res.cloudinary.com/dyfvqwppd/image/upload/v1633465033/fairtex_bag_knrdye.jpg',
                 review: Faker::Lorem.paragraph(sentence_count: 2, supplemental: true, random_sentences_to_add: 4), user: @admin)
-Product.create!(name: 'Tear Drop Bag', category: 'Equipment', brand: 'Fairtex', image_url: 'fairtex_teardrop.jpeg',
+Product.create!(name: 'Tear Drop Bag', category: 'Equipment', brand: 'Fairtex', image_url: 'https://res.cloudinary.com/dyfvqwppd/image/upload/v1633465034/fairtex_teardrop_e65ozw.jpg',
                 review: Faker::Lorem.paragraph(sentence_count: 2, supplemental: true, random_sentences_to_add: 4), user: @admin)
-Product.create!(name: '16oz Gloves(White)', category: 'Gear', brand: 'Fairtex', image_url: 'fairtex_mygloves.jpeg',
+Product.create!(name: '16oz Gloves(White)', category: 'Gear', brand: 'Fairtex', image_url: 'https://res.cloudinary.com/dyfvqwppd/image/upload/v1633465034/fairtex_mygloves_drct6v.jpg',
                 review: Faker::Lorem.paragraph(sentence_count: 3, supplemental: true, random_sentences_to_add: 4), user: @admin)
-Product.create!(name: 'Thai Shorts', category: 'Apparel', brand: 'Yokkao', image_url: 'Yokkao_shorts.jpeg',
+Product.create!(name: 'Thai Shorts', category: 'Apparel', brand: 'Yokkao', image_url: 'https://res.cloudinary.com/dyfvqwppd/image/upload/v1633465035/Yokkao_shorts_qulpi7.jpg',
                 review: Faker::Lorem.paragraph(sentence_count: 2, supplemental: true, random_sentences_to_add: 4), user: @admin)
-Product.create!(name: '16oz Gloves(Blue)', category: 'Gear', brand: 'Yokkao', image_url: 'muay-thai-boxing-gloves-yokkao-matrix-blue.jpeg',
+Product.create!(name: '16oz Gloves(Blue)', category: 'Gear', brand: 'Yokkao', image_url: 'https://res.cloudinary.com/dyfvqwppd/image/upload/v1633465035/muay-thai-boxing-gloves-yokkao-matrix-blue_fxecsm.jpg',
                 review: Faker::Lorem.paragraph(sentence_count: 2, supplemental: true, random_sentences_to_add: 4), user: @admin)
-Product.create!(name: 'Shin Pads', category: 'Gear', brand: 'Yokkao', image_url: 'shin-guards-muay-thai-yokkao-matrix-red-3.jpeg',
+Product.create!(name: 'Shin Pads', category: 'Gear', brand: 'Yokkao', image_url: 'https://res.cloudinary.com/dyfvqwppd/image/upload/v1633465035/shin-guards-muay-thai-yokkao-matrix-red-3_j9l2dk.jpg',
                 review: Faker::Lorem.paragraph(sentence_count: 2, supplemental: true, random_sentences_to_add: 4), user: @admin)
-Product.create!(name: 'Thai Pads', category: 'Gear', brand: 'Yokkao', image_url: 'kicking-pads-curved-muay-thai-yokkao-matrix-island-hot-pink-3.jpeg',
+Product.create!(name: 'Thai Pads', category: 'Gear', brand: 'Yokkao', image_url: 'https://res.cloudinary.com/dyfvqwppd/image/upload/v1633465035/kicking-pads-curved-muay-thai-yokkao-matrix-island-hot-pink-3_a5lk27.jpg',
                 review: Faker::Lorem.paragraph(sentence_count: 2, supplemental: true, random_sentences_to_add: 4), user: @admin)
-Product.create!(name: 'Low Kick Pad', category: 'Gear', brand: 'Yokkao', image_url: 'low-kick-muay-thai-yokkao-orange-tiger-eden-1.jpeg',
+Product.create!(name: 'Low Kick Pad', category: 'Gear', brand: 'Yokkao', image_url: 'https://res.cloudinary.com/dyfvqwppd/image/upload/v1633465035/low-kick-muay-thai-yokkao-orange-tiger-eden-1_ucpgki.jpg',
                 review: Faker::Lorem.paragraph(sentence_count: 3, supplemental: true, random_sentences_to_add: 4), user: @admin)
-Product.create!(name: 'Tear Drop Bag', category: 'Equipment', brand: 'Yokkao', image_url: 'tear-drop-heavy-bags-muay-thai-yokkao-thai-flag.jpeg',
+Product.create!(name: 'Tear Drop Bag', category: 'Equipment', brand: 'Yokkao', image_url: 'https://res.cloudinary.com/dyfvqwppd/image/upload/v1633465035/tear-drop-heavy-bags-muay-thai-yokkao-thai-flag_neyz20.jpg',
                 review: Faker::Lorem.paragraph(sentence_count: 3, supplemental: true, random_sentences_to_add: 4), user: @admin)
-Product.create!(name: 'Heavy Bag', category: 'Equipment', brand: 'Yokkao', image_url: 'heavy-bags-muay-thai-yokkao-biking-red-white.jpeg',
+Product.create!(name: 'Heavy Bag', category: 'Equipment', brand: 'Yokkao', image_url: 'https://res.cloudinary.com/dyfvqwppd/image/upload/v1633465034/heavy-bags-muay-thai-yokkao-biking-red-white_tijsog.jpg',
                 review: Faker::Lorem.paragraph(sentence_count: 2, supplemental: true, random_sentences_to_add: 4), user: @admin)
 
 @products = Product.all
