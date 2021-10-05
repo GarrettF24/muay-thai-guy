@@ -6,7 +6,7 @@ export default function Layout(props) {
   return (
     <div>
       <Nav />
-      {props.children}
+      <div className="container">{props.children}</div>
       <Footer />
     </div>
   )
