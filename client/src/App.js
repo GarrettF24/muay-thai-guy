@@ -1,5 +1,5 @@
 import "./App.css"
-import { Switch, Route } from "react-router"
+import { Switch, Route, useHistory } from "react-router"
 import Layout from "./components/Layout/Layout"
 import Login from "./screens/Login/Login"
 import Signup from "./screens/Signup/Signup"
@@ -9,6 +9,7 @@ import { loginUser, registerUser, verifyUser } from "./services/auth"
 
 function App() {
   const [currentUser, setCurrentUser] = useState(null)
+  const history = useHistory()
 
   useEffect(() => {
     const handleVerify = async () => {
@@ -21,11 +22,13 @@ function App() {
   const handleLogin = async (loginData) => {
     const userData = await loginUser(loginData)
     setCurrentUser(userData)
+    history.push("/")
   }
 
   const handleRegister = async (registerData) => {
     const userData = await registerUser(registerData)
     setCurrentUser(userData)
+    history.push("/")
   }
 
   return (
