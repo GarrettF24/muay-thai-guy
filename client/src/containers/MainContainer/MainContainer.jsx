@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react"
+import { Switch, Route } from "react-router-dom"
 import { getAllProducts } from "../../services/products"
 import { getAllPosts } from "../../services/posts"
+import Products from "../../screens/Products/Products"
 
 export default function MainContainer(props) {
   const [products, setProducts] = useState([])
@@ -23,8 +25,10 @@ export default function MainContainer(props) {
   }, [])
 
   return (
-    <div>
-      <h1>MainContainer</h1>
-    </div>
+    <Switch>
+      <Route path="/products">
+        <Products products={products} />
+      </Route>
+    </Switch>
   )
 }
