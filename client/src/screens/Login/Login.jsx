@@ -1,5 +1,4 @@
 import LoginForm from "../../components/LoginForm/LoginForm"
-
 export default function Login(props) {
-  return <LoginForm />
+  return <LoginForm handleLogin={props.handleLogin} />
 }
