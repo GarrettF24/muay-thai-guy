@@ -21,6 +21,7 @@ import Posts from "../../screens/Posts/Posts"
 import PostDetail from "../../screens/PostDetail/PostDetail"
 import About from "../../screens/About/About"
 import CreatePost from "../../screens/CreatePost/CreatePost"
+import EditPost from "../../screens/EditPost/EditPost"
 
 export default function MainContainer(props) {
   const [products, setProducts] = useState([])
@@ -115,6 +116,9 @@ export default function MainContainer(props) {
       </Route>
       <Route path="/products">
         <Products currentUser={props.currentUser} products={products} />
+      </Route>
+      <Route path="/posts/:id/edit">
+        <EditPost posts={posts} handlePostUpdate={handlePostUpdate} />
       </Route>
       <Route path="/posts/:id">
         <PostDetail

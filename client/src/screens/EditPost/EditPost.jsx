@@ -13,7 +13,7 @@ export default function EditPost(props) {
 
   useEffect(() => {
     const prefillPost = () => {
-      const post = props.post.find((post) => post.id === Number(id))
+      const post = props.posts.find((post) => post.id === Number(id))
       setFormData({
         title: post.title,
         content: post.content,
