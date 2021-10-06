@@ -7,5 +7,5 @@ class User < ApplicationRecord
   validates :email, presence: true, uniqueness: true
   validates :email, format: { with: URI::MailTo::EMAIL_REGEXP }
   validates :password, length: { minimum: 6 }
-  # validates :is_admin, inclusion: { in: [true, false] }
+  validates :is_admin, inclusion: { in: [true, false] }
 end
