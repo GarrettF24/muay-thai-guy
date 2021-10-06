@@ -69,7 +69,7 @@ export default function MainContainer(props) {
           products={products}
           currentUser={props.currentUser}
         />
-        <Route path="/products/new">
+        <Route path="/products/create">
           <CreateProduct handleProductCreate={handleProductCreate} />
         </Route>
       </Route>

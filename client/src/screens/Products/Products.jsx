@@ -10,7 +10,7 @@ export default function Products(props) {
           return <ProductCard key={index} product={product} user={props.user} />
         })}
         <div className="create-button">
-          <Link to="/products/new">
+          <Link to="/products/create">
             <button>Create</button>
           </Link>
         </div>

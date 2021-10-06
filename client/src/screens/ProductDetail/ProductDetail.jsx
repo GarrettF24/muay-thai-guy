@@ -2,13 +2,13 @@ import React, { useEffect, useState } from "react"
 import { getOneProduct } from "../../services/products"
 import { useParams } from "react-router-dom"
 import { Link } from "react-router-dom"
-import { useHistory } from "react-router"
+// import { useHistory } from "react-router"
 
 export default function ProductDetail(props) {
   const [product, setProduct] = useState({})
   const [isLoaded, setLoaded] = useState(false)
   const { id } = useParams()
-  const history = useHistory()
+  // const history = useHistory()
 
   useEffect(() => {
     console.log(id)
@@ -28,9 +28,9 @@ export default function ProductDetail(props) {
   //   }, 100)
   // }
 
-  if (!isLoaded) {
-    return <h1>Loading...</h1>
-  }
+  // if (!isLoaded) {
+  //   return <h1>Loading...</h1>
+  // }
 
   return (
     <div className="product-detail-page">
