@@ -21,13 +21,6 @@ export default function ProductDetail(props) {
     fetchProduct()
   }, [id])
 
-  // const deleteAndPush = () => {
-  //   props.handleProductDelete(product.id)
-  //   setTimeout(() => {
-  //     history.push("/")
-  //   }, 100)
-  // }
-
   // if (!isLoaded) {
   //   return <h1>Loading...</h1>
   // }
