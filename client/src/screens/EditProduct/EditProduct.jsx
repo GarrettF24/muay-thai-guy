@@ -12,20 +12,20 @@ export default function EditProduct(props) {
   const { id } = useParams()
 
   useEffect(() => {
-    const prefillFormData = () => {
-      const singleProduct = props.products.find(
+    const prefillProduct = () => {
+      const product = props.products.find(
         (product) => product.id === Number(id)
       )
       setFormData({
-        name: singleProduct.name,
-        category: singleProduct.category,
-        brand: singleProduct.brand,
-        image_url: singleProduct.image_url,
-        review: singleProduct.review,
+        name: product.name,
+        category: product.category,
+        brand: product.brand,
+        image_url: product.image_url,
+        review: product.review,
       })
     }
     if (props.products.length) {
-      prefillFormData()
+      prefillProduct()
     }
   }, [props.products, id])
 

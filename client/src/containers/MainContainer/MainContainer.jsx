@@ -76,6 +76,7 @@ export default function MainContainer(props) {
   const handlePostDelete = async (id) => {
     await deletePost(id)
     setProducts((prevState) => prevState.filter((post) => post.id !== id))
+    history.push("/posts")
   }
 
   const handlePostUpdate = async (id, postData) => {
