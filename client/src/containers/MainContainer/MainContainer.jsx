@@ -63,7 +63,11 @@ export default function MainContainer(props) {
         />
       </Route>
       <Route path="/products/:id">
-        <ProductDetail products={products} currentUser={props.currentUser} />
+        <ProductDetail
+          handleDelete={handleProductDelete}
+          products={products}
+          currentUser={props.currentUser}
+        />
       </Route>
       <Route path="/products">
         <Products products={products} />

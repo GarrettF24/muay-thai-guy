@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react"
 import { getOneProduct } from "../../services/products"
 import { useParams } from "react-router-dom"
+import { Link } from "react-router-dom"
 
 export default function ProductDetail(props) {
   const [product, setProduct] = useState({})
@@ -38,8 +39,12 @@ export default function ProductDetail(props) {
       <div className="product-crud">
         {props.currentUser !== null ? (
           <div className="crud-buttons">
-            <button>Edit</button>
-            <button>Delete</button>
+            <Link to={`/product/${id}/edit`}>
+              <button>Edit</button>
+            </Link>
+            <button onClick={() => props.handleProductDelete(product.id)}>
+              Delete
+            </button>
           </div>
         ) : null}
       </div>
