@@ -26,7 +26,7 @@ class ProductsController < ApplicationController
     end
   end
 
-  # PATCH/PUT /products/1
+  # UPDATE /products/1
   def update
     if @product.update(product_params)
       render json: @product

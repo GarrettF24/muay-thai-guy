@@ -76,6 +76,7 @@ export default function MainContainer(props) {
       <Route path="/products">
         <Products products={products} />
       </Route>
+      {/* <h1>This is landing page</h1> */}
     </Switch>
   )
 }

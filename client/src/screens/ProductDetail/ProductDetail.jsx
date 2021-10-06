@@ -48,7 +48,7 @@ export default function ProductDetail(props) {
       <div className="product-crud">
         {props.currentUser !== null ? (
           <div className="crud-buttons">
-            <Link to={`/product/${id}/edit`}>
+            <Link to={`/products/${id}/edit`}>
               <button>Edit</button>
             </Link>
             <button onClick={() => props.handleProductDelete(product.id)}>

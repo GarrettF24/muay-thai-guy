@@ -6,6 +6,7 @@ export default function Products(props) {
   return (
     <>
       <div className="products-container">
+        <h1>Check out my reviews on top selling brands</h1>
         {props.products.map((product, index) => {
           return <ProductCard key={index} product={product} user={props.user} />
         })}
