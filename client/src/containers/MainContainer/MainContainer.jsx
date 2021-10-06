@@ -9,8 +9,7 @@ import {
 import { getAllPosts } from "../../services/posts"
 import Products from "../../screens/Products/Products"
 import ProductDetail from "../../screens/ProductDetail/ProductDetail"
-// import CreateEditProduct from "../../screens/CreateEditProduct"
-
+import EditProduct from "../../screens/EditProduct/EditProduct"
 export default function MainContainer(props) {
   const [products, setProducts] = useState([])
   const [posts, setPosts] = useState([])
@@ -57,18 +56,18 @@ export default function MainContainer(props) {
 
   return (
     <Switch>
+      <Route path="/products/:id/edit">
+        <EditProduct
+          products={products}
+          handleProductUpdate={handleProductUpdate}
+        />
+      </Route>
       <Route path="/products/:id">
-        <ProductDetail products={products} />
+        <ProductDetail products={products} currentUser={props.currentUser} />
       </Route>
       <Route path="/products">
         <Products products={products} />
       </Route>
-      {/* <Route path="/products/:id/edit">
-        <CreateEditProduct
-          products={products}
-          handleProductUpdate={handleProductUpdate}
-        />
-      </Route> */}
     </Switch>
   )
 }
