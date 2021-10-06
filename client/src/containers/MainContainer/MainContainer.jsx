@@ -10,6 +10,7 @@ import { getAllPosts } from "../../services/posts"
 import Products from "../../screens/Products/Products"
 import ProductDetail from "../../screens/ProductDetail/ProductDetail"
 import EditProduct from "../../screens/EditProduct/EditProduct"
+import CreateProduct from "../../screens/CreateProduct/CreateProduct"
 export default function MainContainer(props) {
   const [products, setProducts] = useState([])
   const [posts, setPosts] = useState([])
@@ -64,10 +65,13 @@ export default function MainContainer(props) {
       </Route>
       <Route path="/products/:id">
         <ProductDetail
-          handleDelete={handleProductDelete}
+          handleProductDelete={handleProductDelete}
           products={products}
           currentUser={props.currentUser}
         />
+        <Route path="/products/new">
+          <CreateProduct handleProductCreate={handleProductCreate} />
+        </Route>
       </Route>
       <Route path="/products">
         <Products products={products} />

@@ -21,15 +21,15 @@ export default function ProductDetail(props) {
     fetchProduct()
   }, [id])
 
-  const deleteAndPush = () => {
-    props.handleProductDelete(product.id)
-    setTimeout(() => {
-      history.push("/")
-    }, 500)
-  }
+  // const deleteAndPush = () => {
+  //   props.handleProductDelete(product.id)
+  //   setTimeout(() => {
+  //     history.push("/")
+  //   }, 100)
+  // }
 
   if (!isLoaded) {
-    return <h1>Loading Jam...</h1>
+    return <h1>Loading...</h1>
   }
 
   return (
@@ -51,7 +51,9 @@ export default function ProductDetail(props) {
             <Link to={`/product/${id}/edit`}>
               <button>Edit</button>
             </Link>
-            <button onClick={deleteAndPush}>Delete</button>
+            <button onClick={() => props.handleProductDelete(product.id)}>
+              Delete
+            </button>
           </div>
         ) : null}
       </div>
