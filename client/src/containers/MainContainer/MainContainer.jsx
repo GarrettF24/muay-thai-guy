@@ -20,6 +20,7 @@ import LandingPage from "../../components/LandingPage/LandingPage"
 import Posts from "../../screens/Posts/Posts"
 import PostDetail from "../../screens/PostDetail/PostDetail"
 import About from "../../screens/About/About"
+import CreatePost from "../../screens/CreatePost/CreatePost"
 
 export default function MainContainer(props) {
   const [products, setProducts] = useState([])
@@ -53,6 +54,7 @@ export default function MainContainer(props) {
     setProducts((prevState) =>
       prevState.filter((productItem) => productItem.id !== id)
     )
+    history.push("/products")
   }
 
   const handleProductUpdate = async (id, productData) => {
@@ -88,6 +90,9 @@ export default function MainContainer(props) {
 
   return (
     <Switch>
+      <Route path="/posts/create">
+        <CreatePost handlePostCreate={handlePostCreate} />
+      </Route>
       <Route path="/about">
         <About />
       </Route>
@@ -112,13 +117,10 @@ export default function MainContainer(props) {
       </Route>
       <Route path="/posts/:id">
         <PostDetail
-          handleProductDelete={handlePostDelete}
+          handlePostDelete={handlePostDelete}
           posts={posts}
           currentUser={props.currentUser}
         />
-      </Route>
-      <Route path="/posts/create">
-        <CreateProduct handlePostCreate={handlePostCreate} />
       </Route>
       <Route path="/posts">
         <Posts currentUser={props.currentUser} posts={posts} />

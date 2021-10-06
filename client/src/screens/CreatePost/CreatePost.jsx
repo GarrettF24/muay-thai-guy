@@ -1,5 +1,5 @@
 import React from "react"
-
+import { useState } from "react"
 export default function CreatePost(props) {
   const [formData, setFormData] = useState({
     title: "",
@@ -29,7 +29,7 @@ export default function CreatePost(props) {
         onChange={handleChange}
       />
       <br />
-      <input
+      <textarea
         type="text"
         placeholder="Content"
         name="content"

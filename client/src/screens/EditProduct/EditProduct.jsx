@@ -64,7 +64,7 @@ export default function EditProduct(props) {
       <input
         type="text"
         placeholder="Brand"
-        name="category"
+        name="brand"
         value={formData.brand}
         onChange={handleChange}
       />
