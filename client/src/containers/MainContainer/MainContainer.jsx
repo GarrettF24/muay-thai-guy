@@ -6,12 +6,18 @@ import {
   postProduct,
   putProduct,
 } from "../../services/products"
-import { getAllPosts } from "../../services/posts"
+import {
+  getAllPosts,
+  createPost,
+  deletePost,
+  updatePost,
+} from "../../services/posts"
 import Products from "../../screens/Products/Products"
 import ProductDetail from "../../screens/ProductDetail/ProductDetail"
 import EditProduct from "../../screens/EditProduct/EditProduct"
 import CreateProduct from "../../screens/CreateProduct/CreateProduct"
 import LandingPage from "../../components/LandingPage/LandingPage"
+import Posts from "../../screens/Posts/Posts"
 
 export default function MainContainer(props) {
   const [products, setProducts] = useState([])
@@ -57,6 +63,27 @@ export default function MainContainer(props) {
     history.push("/products")
   }
 
+  const handlePostCreate = async (postData) => {
+    const newPost = await createPost(postData)
+    setProducts((prevState) => [...prevState, newPost])
+    history.push("/posts")
+  }
+
+  const handlePostDelete = async (id) => {
+    await deletePost(id)
+    setProducts((prevState) => prevState.filter((post) => post.id !== id))
+  }
+
+  const handlePostUpdate = async (id, postData) => {
+    const updatedPost = await updatePost(id, postData)
+    setPosts((prevState) =>
+      prevState.map((post) => {
+        return post.id === Number(id) ? updatedPost : post
+      })
+    )
+    history.push("/posts")
+  }
+
   return (
     <Switch>
       <Route path="/products/:id/edit">
@@ -77,6 +104,9 @@ export default function MainContainer(props) {
       </Route>
       <Route path="/products">
         <Products currentUser={props.currentUser} products={products} />
+      </Route>
+      <Route path="/posts">
+        <Posts currentUser={props.currentUser} posts={posts} />
       </Route>
       <LandingPage />
     </Switch>
