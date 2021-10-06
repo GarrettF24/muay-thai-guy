@@ -18,6 +18,8 @@ import EditProduct from "../../screens/EditProduct/EditProduct"
 import CreateProduct from "../../screens/CreateProduct/CreateProduct"
 import LandingPage from "../../components/LandingPage/LandingPage"
 import Posts from "../../screens/Posts/Posts"
+import PostDetail from "../../screens/PostDetail/PostDetail"
+import About from "../../screens/About/About"
 
 export default function MainContainer(props) {
   const [products, setProducts] = useState([])
@@ -86,11 +88,17 @@ export default function MainContainer(props) {
 
   return (
     <Switch>
+      <Route path="/about">
+        <About />
+      </Route>
       <Route path="/products/:id/edit">
         <EditProduct
           products={products}
           handleProductUpdate={handleProductUpdate}
         />
+      </Route>
+      <Route path="/products/create">
+        <CreateProduct handleProductCreate={handleProductCreate} />
       </Route>
       <Route path="/products/:id">
         <ProductDetail
@@ -98,12 +106,19 @@ export default function MainContainer(props) {
           products={products}
           currentUser={props.currentUser}
         />
-        <Route path="/products/create">
-          <CreateProduct handleProductCreate={handleProductCreate} />
-        </Route>
       </Route>
       <Route path="/products">
         <Products currentUser={props.currentUser} products={products} />
+      </Route>
+      <Route path="/posts/:id">
+        <PostDetail
+          handleProductDelete={handlePostDelete}
+          posts={posts}
+          currentUser={props.currentUser}
+        />
+      </Route>
+      <Route path="/posts/create">
+        <CreateProduct handlePostCreate={handlePostCreate} />
       </Route>
       <Route path="/posts">
         <Posts currentUser={props.currentUser} posts={posts} />

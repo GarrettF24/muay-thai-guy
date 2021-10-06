@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import "./Posts.css"
 import PostCard from "../../components/PostCard/PostCard"
 export default function Posts(props) {
   return (
