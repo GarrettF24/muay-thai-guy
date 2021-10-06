@@ -2,11 +2,13 @@ import React, { useEffect, useState } from "react"
 import { getOneProduct } from "../../services/products"
 import { useParams } from "react-router-dom"
 import { Link } from "react-router-dom"
+import { useHistory } from "react-router"
 
 export default function ProductDetail(props) {
   const [product, setProduct] = useState({})
   const [isLoaded, setLoaded] = useState(false)
   const { id } = useParams()
+  const history = useHistory()
 
   useEffect(() => {
     console.log(id)
@@ -18,6 +20,13 @@ export default function ProductDetail(props) {
     }
     fetchProduct()
   }, [id])
+
+  const deleteAndPush = () => {
+    props.handleProductDelete(product.id)
+    setTimeout(() => {
+      history.push("/")
+    }, 500)
+  }
 
   if (!isLoaded) {
     return <h1>Loading Jam...</h1>
@@ -42,9 +51,7 @@ export default function ProductDetail(props) {
             <Link to={`/product/${id}/edit`}>
               <button>Edit</button>
             </Link>
-            <button onClick={() => props.handleProductDelete(product.id)}>
-              Delete
-            </button>
+            <button onClick={deleteAndPush}>Delete</button>
           </div>
         ) : null}
       </div>
