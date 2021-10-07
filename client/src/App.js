@@ -1,4 +1,5 @@
 import "./App.css"
+import "bootstrap/dist/css/bootstrap.min.css"
 import { Switch, Route, useHistory } from "react-router"
 import MainContainer from "./containers/MainContainer/MainContainer"
 import Layout from "./components/Layout/Layout"

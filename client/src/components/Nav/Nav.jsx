@@ -8,7 +8,7 @@ export default function Nav(props) {
     <nav className="navbar">
       <div className="logo">
         <Link to="/">
-          <img src={Logo} alt="logo" />
+          <img id="nav-logo" src={Logo} alt="logo" />
         </Link>
       </div>
       <div className="links">

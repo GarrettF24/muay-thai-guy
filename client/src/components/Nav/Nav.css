@@ -3,11 +3,11 @@
   width: 100%;
   justify-content: space-between;
   background-color: black;
-  height: 10rem;
+  height: 12rem;
 }
 
-.logo img {
-  height: 100%;
+#nav-logo {
+  height: 15vh;
 }
 
 .links a {
