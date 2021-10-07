@@ -1,10 +1,16 @@
 .product-card {
-  border: 1px solid black;
   display: flex;
   margin: 2%;
 }
 
 .product-image {
-  width: 20vw;
-  height: 25vh;
+  border-radius: 15px;
+  width: 19vw;
+  height: 29vh;
+}
+
+.product-card :hover {
+  transform: scale(1.04);
+  transition: 1s;
+  box-shadow: 10px 5px 5px gainsboro;
 }

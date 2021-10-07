@@ -18,5 +18,47 @@
   -ms-flex-align: start;
   align-items: flex-start;
   width: 80%;
-  margin: 7rem auto;
+  margin: 1rem auto;
+  background-image: url("../../assets/ring_square.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.product-header {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.product-header h1 {
+  color: white;
+}
+
+@media only screen and (max-width: 575px) {
+  #root {
+    background: none;
+  }
+
+  .product-header {
+    width: 100vw;
+    display: flex;
+    text-align: center;
+  }
+
+  .product-header h1 {
+    color: white;
+  }
+
+  .product-image {
+    width: 100vw;
+    height: 50vh;
+  }
+
+  .products-container {
+    flex-direction: column;
+    background: none;
+    width: 100%;
+    margin: 1rem auto;
+  }
 }

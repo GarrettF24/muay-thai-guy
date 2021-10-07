@@ -8,18 +8,20 @@ export default function Products(props) {
   return (
     <>
       <div className="products-container">
-        <h1>Check out my reviews on top selling brands</h1>
+        <div className="product-header">
+          <h1>Check out my reviews on top selling brands</h1>
+        </div>
         {props.products.map((product, index) => {
           return <ProductCard key={index} product={product} />
         })}
+        {props.currentUser !== null ? (
+          <div className="create-button">
+            <Link to="/products/create">
+              <button>Create</button>
+            </Link>
+          </div>
+        ) : null}
       </div>
-      {props.currentUser !== null ? (
-        <div className="create-button">
-          <Link to="/products/create">
-            <button>Create</button>
-          </Link>
-        </div>
-      ) : null}
     </>
   )
 }
