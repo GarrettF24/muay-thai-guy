@@ -15,5 +15,24 @@
   -ms-flex-align: start;
   align-items: flex-start;
   width: 80%;
-  margin: 7rem auto;
+  margin: 1rem auto;
+  height: 100vh;
+  align-items: center;
+}
+
+@media only screen and (max-width: 575px) {
+  .posts-container {
+    width: 100%;
+  }
+  .post-card-component {
+    width: 80%;
+  }
+
+  .post-card {
+    width: 90vw;
+  }
+
+  .create-post-button {
+    margin-bottom: 3rem;
+  }
 }

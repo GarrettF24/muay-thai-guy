@@ -6,16 +6,18 @@ export default function Posts(props) {
     <>
       <div className="posts-container">
         {props.posts.map((post, index) => {
-          return <PostCard key={index} post={post} />
+          return (
+            <PostCard classname="post-card-component" key={index} post={post} />
+          )
         })}
+        {props.currentUser !== null ? (
+          <div className="create-post-button">
+            <Link to="/posts/create">
+              <button>Create</button>
+            </Link>
+          </div>
+        ) : null}
       </div>
-      {props.currentUser !== null ? (
-        <div className="create-post-button">
-          <Link to="/posts/create">
-            <button>Create</button>
-          </Link>
-        </div>
-      ) : null}
     </>
   )
 }

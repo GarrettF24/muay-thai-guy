@@ -1,3 +1,27 @@
 .post-card {
-  border: 1px solid black;
+  margin: 3rem;
+  width: 50vw;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../assets/boxing-gym.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.post-card h1 {
+  color: azure;
+}
+
+.post-link {
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 575px) {
+  .post-card {
+    width: 90vw;
+    text-align: center;
+  }
 }
