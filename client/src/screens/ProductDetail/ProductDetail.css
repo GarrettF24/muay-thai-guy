@@ -59,9 +59,13 @@
     border: 1px solid black;
   }
 
+  .product-info {
+    margin-top: 3rem;
+  }
+
   .product-info-container {
-    margin: 0 auto;
     color: white;
     margin: auto;
+    width: 80%;
   }
 }
