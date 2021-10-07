@@ -22,7 +22,8 @@
   .about-me {
     color: white;
     text-align: center;
-    width: 100%;
+    width: 90%;
+    background: none;
   }
 
   .about-me-header {
@@ -30,7 +31,11 @@
   }
 
   .about-me-paragraph {
-    font-size: 0.95rem;
+    font-size: 14px;
     width: 100%;
+  }
+
+  .container {
+    background: none;
   }
 }
