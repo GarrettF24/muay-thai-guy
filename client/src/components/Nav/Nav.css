@@ -27,6 +27,7 @@
   display: flex;
   width: 20%;
   align-items: unset;
+  padding-top: 18px;
 }
 
 .nav-username {
