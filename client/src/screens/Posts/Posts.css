@@ -15,9 +15,13 @@
   -ms-flex-align: start;
   align-items: flex-start;
   width: 80%;
-  margin: 1rem auto;
+  margin: 0 auto;
   height: 100vh;
   align-items: center;
+  background-image: url("../../assets/ring_square.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 @media only screen and (max-width: 575px) {

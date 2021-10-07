@@ -1,3 +1,7 @@
+#root {
+  background-image: none;
+}
+
 .welcome-container {
   display: -ms-flexbox;
   display: -webkit-flex;

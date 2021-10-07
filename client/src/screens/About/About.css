@@ -6,6 +6,10 @@
   color: white;
   width: 70%;
   margin: 0 auto;
+  background-image: url("../../assets/ring_square.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .about-me-paragraph {
