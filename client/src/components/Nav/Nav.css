@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
 .navbar {
   display: flex;
   width: 100%;
@@ -9,11 +11,47 @@
 #nav-logo {
   height: 15vh;
 }
-
+.links {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  font-size: larger;
+  align-items: center;
+}
 .links a {
-  color: white;
+  color: #dbd7c4;
+  font-family: "Bebas Neue", cursive;
+}
+
+.nav-user {
+  display: flex;
+  width: 20%;
+  align-items: unset;
 }
 
 .nav-username {
-  color: white;
+  color: #dbd7c4;
+  font-family: "Bebas Neue", cursive;
+}
+.logout {
+  color: #dbd7c4;
+  font-family: "Bebas Neue", cursive;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 575px) {
+  .nav-username {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    align-items: center;
+  }
+
+  .links {
+    width: 73%;
+    display: flex;
+    justify-content: space-between;
+    font-size: medium;
+    align-items: center;
+  }
 }
