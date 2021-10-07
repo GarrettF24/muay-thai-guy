@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react"
 import { getOnePost } from "../../services/posts"
 import { useParams } from "react-router-dom"
 import { Link } from "react-router-dom"
-
+import "./PostDetail.css"
 export default function PostDetail(props) {
   const [post, setPost] = useState({})
   const [isLoaded, setLoaded] = useState(false)

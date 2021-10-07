@@ -1,0 +1,52 @@
+.post-page {
+  height: 100vh;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-image: url("../../assets/ring_square.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.post-title h1 {
+  color: white;
+}
+
+.post-content {
+  width: 70%;
+}
+
+.post-content p {
+  color: white;
+}
+
+@media only screen and (max-width: 575px) {
+  .post-page {
+    background: none;
+  }
+
+  .post-content p {
+    font-size: large;
+  }
+}
