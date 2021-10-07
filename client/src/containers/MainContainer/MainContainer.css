@@ -1,0 +1,12 @@
+#root {
+  background: rgba(199, 199, 200, 0.603);
+}
+
+@media only screen and (max-width: 575px) {
+  #root {
+    background-image: url("../../assets/ring_square.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}

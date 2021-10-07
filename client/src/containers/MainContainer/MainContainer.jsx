@@ -22,6 +22,7 @@ import PostDetail from "../../screens/PostDetail/PostDetail"
 import About from "../../screens/About/About"
 import CreatePost from "../../screens/CreatePost/CreatePost"
 import EditPost from "../../screens/EditPost/EditPost"
+import "./MainContainer.css"
 
 export default function MainContainer(props) {
   const [products, setProducts] = useState([])

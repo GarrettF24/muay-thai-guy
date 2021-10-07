@@ -18,7 +18,7 @@
   -ms-flex-align: start;
   align-items: flex-start;
   width: 80%;
-  margin: 1rem auto;
+  margin: auto;
   background-image: url("../../assets/ring_square.png");
   background-repeat: no-repeat;
   background-size: cover;

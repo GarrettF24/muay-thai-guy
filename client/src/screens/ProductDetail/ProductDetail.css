@@ -1,10 +1,3 @@
-#root {
-  background-image: url("../../assets/ring_square.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
 .product-detail-page {
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -25,7 +18,11 @@
   -ms-flex-align: center;
   align-items: center;
   height: 100vh;
-  margin: 3rem auto;
+  margin: 0 auto;
+  background-image: url("../../assets/ring_square.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .product-image {
@@ -42,11 +39,13 @@
 .product-info-container {
   margin-left: 2rem;
   color: white;
+  width: 40%;
 }
 
 @media only screen and (max-width: 575px) {
   .product-detail-page {
     flex-direction: column;
+    background: none;
   }
 
   .product-image {
