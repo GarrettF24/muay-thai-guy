@@ -19,27 +19,98 @@
   align-items: center;
   width: 80vw;
   margin: 0 auto;
+  background-image: url("../../assets/ring_square.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
-/* .carousel-one {
-} */
+.welcome-info {
+  display: flex;
+  text-align: center;
+  margin: 1.5rem;
+}
+
+.welcome-info h4 {
+  color: #577eeb;
+  font-weight: 600;
+}
+
+.quick-look {
+  color: #577eeb;
+}
 
 .carousel-item img {
   /* height: 450px; */
   width: 100%;
+  border-radius: 15px;
 }
-
-/* .active img {
-  height: auto;
-  height: 450px;
-} */
-
-/* .d-block,
-.w-100 {
-  width: 100%;
-} */
 
 .icon-container {
   height: 450px;
   width: 450px;
+  padding: 10px;
+  margin-bottom: 2rem;
+}
+
+.item-title {
+  color: black;
+  background: rgba(255, 255, 255, 0.205);
+}
+
+.item-info {
+  color: rgb(0, 0, 0);
+  background: rgba(255, 255, 255, 0.404);
+  font-size: 1.4rem;
+}
+
+@media only screen and (max-width: 575px) {
+  #root {
+    background-image: url("../../assets/ring_square.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .welcome-container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    background: none;
+  }
+
+  .welcome-container h4 {
+    font-size: 1rem;
+    color: white;
+  }
+
+  .welcome-info {
+    display: flex;
+    text-align: center;
+    margin: 1.5rem;
+  }
+  .item-title {
+    color: black;
+    background: rgba(255, 255, 255, 0.205);
+    font-size: 0.8rem;
+  }
+
+  .item-info {
+    color: rgb(0, 0, 0);
+    background: rgba(255, 255, 255, 0.404);
+    font-size: 0.7rem;
+  }
+
+  .carousel-item img {
+    /* height: 450px; */
+    width: 60%;
+    border-radius: 15px;
+  }
+
+  .icon-container {
+    height: 250px;
+    width: 250px;
+    padding: 10px;
+    margin-bottom: 2rem;
+  }
 }

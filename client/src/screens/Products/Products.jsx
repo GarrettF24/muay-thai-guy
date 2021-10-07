@@ -1,7 +1,9 @@
-import React from "react"
+import React, { useState } from "react"
 import ProductCard from "../../components/ProductCard/ProductCard"
+import Search from "../../components/Search/Search"
 import "./Products.css"
 import { Link } from "react-router-dom"
+
 export default function Products(props) {
   return (
     <>
