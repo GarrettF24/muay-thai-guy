@@ -27,8 +27,7 @@ import "./MainContainer.css"
 export default function MainContainer(props) {
   const [products, setProducts] = useState([])
   const [posts, setPosts] = useState([])
-  const [searchResult, setSearchResult] = useState([])
-  const [applySort, setApplySort] = useState(false)
+
   const history = useHistory()
 
   useEffect(() => {
@@ -92,14 +91,6 @@ export default function MainContainer(props) {
     )
     history.push("/posts")
   }
-
-  // const handleSearch = (event) => {
-  //   const results = products.filter((product) =>
-  //     product.name.toLowerCase().includes(event.target.value.toLowerCase())
-  //   )
-  //   setSearchResult(results)
-  //   setApplySort(true)
-  // }
 
   return (
     <Switch>

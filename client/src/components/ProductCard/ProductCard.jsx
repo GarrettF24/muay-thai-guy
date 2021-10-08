@@ -11,9 +11,6 @@ export default function ProductCard(props) {
           alt={props.product.name}
         />
       </Link>
-      {/* <div className="product-card-name">
-        <h3>{props.product.name}</h3>
-      </div> */}
     </div>
   )
 }

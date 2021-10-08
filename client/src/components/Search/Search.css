@@ -1,5 +1,5 @@
 .search-form {
-  padding-top: 100px;
+  /* padding-top: 100px; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -7,12 +7,12 @@
 }
 
 .search-input {
-  width: 70vw;
+  width: 30vw;
   font-size: 18px;
   letter-spacing: 0.1px;
-  padding: 12px 20px 12px 40px;
-  border: 1px solid #ddd;
-  margin: 40px;
+  padding: 12px 10px 12px 40px;
+  /* border: 1px solid #ddd; */
+  /* margin: 40px; */
 }
 
 .search-input::placeholder {
