@@ -21,7 +21,7 @@ export default function CreateProduct(props) {
     <div class="create-container">
       <div class="form-container">
         <form
-          id="contact-form"
+          id="create-product-form"
           action=""
           method="post"
           onSubmit={(e) => {
