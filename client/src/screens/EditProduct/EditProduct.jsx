@@ -42,11 +42,9 @@ export default function EditProduct(props) {
     <div className="form-container">
       <form
         id="edit-form"
-        action=""
-        method="post"
         onSubmit={(e) => {
           e.preventDefault()
-          props.handleProductCreate(formData)
+          props.handleProductUpdate(id, formData)
         }}
       >
         <h2>Edit a Product</h2>
