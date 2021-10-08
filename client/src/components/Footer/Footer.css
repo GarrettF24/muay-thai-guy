@@ -7,3 +7,13 @@
   padding: 1rem;
   bottom: 0;
 }
+
+.footer-links {
+  width: 40%;
+  justify-content: space-evenly;
+  display: flex;
+}
+
+.socials {
+  font-size: xx-large;
+}

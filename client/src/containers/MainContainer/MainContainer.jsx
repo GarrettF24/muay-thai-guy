@@ -27,6 +27,8 @@ import "./MainContainer.css"
 export default function MainContainer(props) {
   const [products, setProducts] = useState([])
   const [posts, setPosts] = useState([])
+  const [searchResult, setSearchResult] = useState([])
+  const [applySort, setApplySort] = useState(false)
   const history = useHistory()
 
   useEffect(() => {
@@ -91,6 +93,14 @@ export default function MainContainer(props) {
     history.push("/posts")
   }
 
+  // const handleSearch = (event) => {
+  //   const results = products.filter((product) =>
+  //     product.name.toLowerCase().includes(event.target.value.toLowerCase())
+  //   )
+  //   setSearchResult(results)
+  //   setApplySort(true)
+  // }
+
   return (
     <Switch>
       <Route path="/posts/create">
@@ -116,7 +126,11 @@ export default function MainContainer(props) {
         />
       </Route>
       <Route path="/products">
-        <Products currentUser={props.currentUser} products={products} />
+        <Products
+          // handleSearch={handleSearch}
+          currentUser={props.currentUser}
+          products={products}
+        />
       </Route>
       <Route path="/posts/:id/edit">
         <EditPost posts={posts} handlePostUpdate={handlePostUpdate} />
