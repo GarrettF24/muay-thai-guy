@@ -1,5 +1,8 @@
 #root {
   background: rgba(199, 199, 200, 0.603);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 @media only screen and (max-width: 575px) {
