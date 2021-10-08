@@ -24,6 +24,8 @@ Post.create!(title: 'How to be respectful',
 
 @posts = Post.all
 
+@comments = Comment.create!(content: 'BLAAAAAAH', user: @admin, post: @posts.first)
+
 Product.create!(name: 'Head Gear', category: 'Gear', brand: 'Everlast', image_url: 'https://res.cloudinary.com/dyfvqwppd/image/upload/v1633465029/everlast_head_gear_dfeihx.jpg',
                 review: Faker::Lorem.paragraph(sentence_count: 4, supplemental: true, random_sentences_to_add: 4), user: @admin)
 Product.create!(name: 'Heavy Bag', category: 'Equipment', brand: 'Everlast', image_url: 'https://res.cloudinary.com/dyfvqwppd/image/upload/v1633465030/everlast_heavy_bag_mpiu0o.jpg',
@@ -84,3 +86,4 @@ Product.create!(name: 'Heavy Bag', category: 'Equipment', brand: 'Yokkao', image
 puts "#{User.count} users created!"
 puts "#{Post.count} posts created!"
 puts "#{Product.count} products created!"
+puts "#{Comment.count} comments created!"

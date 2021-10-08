@@ -11,7 +11,8 @@ class PostsController < ApplicationController
 
   # GET /posts/1
   def show
-    render json: @post
+    @comments = Comment.find(post_params[:comments].map { |comment| comment[:id] })
+    render json: @post, include: :comments
   end
 
   # POST /posts
