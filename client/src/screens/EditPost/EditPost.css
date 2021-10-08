@@ -150,7 +150,7 @@ fieldset {
 @media only screen and (max-width: 575px) {
   .container {
     margin: auto;
-    width: 100vw;
+    width: vw;
   }
   #contact {
     width: 90vw;
@@ -158,5 +158,9 @@ fieldset {
 
   #edit-post-form {
     width: 100vw;
+  }
+
+  .edit-post-form-container {
+    width: 80vw;
   }
 }

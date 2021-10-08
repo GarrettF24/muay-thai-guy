@@ -41,7 +41,7 @@
   }
 
   .product-header {
-    width: 100vw;
+    width: 95%;
     display: flex;
     text-align: center;
   }
@@ -51,7 +51,7 @@
   }
 
   .product-card-image {
-    width: 100vw;
+    width: 90vw;
     height: 50vh;
   }
 
