@@ -8,7 +8,7 @@ export default function Search(props) {
         name="search"
         value={props.products.name}
         onChange={(e) => props.handleSearch(e)}
-        placeholder="Find a products"
+        placeholder="Search"
         type="text"
       />
     </div>
