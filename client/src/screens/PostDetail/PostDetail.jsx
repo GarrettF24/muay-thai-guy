@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom"
 import { Link } from "react-router-dom"
 import "./PostDetail.css"
 export default function PostDetail(props) {
-  const [post, setPost] = useState({})
+  const [post, setPost] = useState(null)
   const [isLoaded, setLoaded] = useState(false)
   const { id } = useParams()
 
@@ -22,10 +22,10 @@ export default function PostDetail(props) {
   return (
     <div className="post-page">
       <div className="post-title">
-        <h1>{post.title}</h1>
+        <h1>{post?.title}</h1>
       </div>
       <div className="post-content">
-        <p>{post.content}</p>
+        <p>{post?.content}</p>
       </div>
       <div className="post-crud">
         {props.currentUser !== null ? (
@@ -38,6 +38,11 @@ export default function PostDetail(props) {
             </button>
           </div>
         ) : null}
+      </div>
+      <div>
+        {post?.comments.map((comment) => (
+          <p>{comment.content}</p>
+        ))}
       </div>
     </div>
   )
