@@ -40,6 +40,9 @@
 .post-content p {
   color: white;
 }
+.comments {
+  background: white;
+}
 
 @media only screen and (max-width: 575px) {
   .post-page {

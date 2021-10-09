@@ -24,7 +24,16 @@ Post.create!(title: 'How to be respectful',
 
 @posts = Post.all
 
-@comments = Comment.create!(content: 'BLAAAAAAH', user: @admin, post: @posts.first)
+Comment.create!(content: 'Awesome article, 10/10!', user: @admin, post: @posts.first)
+Comment.create!(content: 'You are an idiot and you have no idea what you are talking about.', user: @admin,
+                post: @posts.first)
+Comment.create!(content: 'Spam comment selling shady stuff here.', user: @admin2, post: @posts.first)
+Comment.create!(content: 'I hate you.', user: @admin, post: @posts.second)
+Comment.create!(content: "Don't listen to the haters, keep doing you.", user: @admin, post: @posts.second)
+Comment.create!(content: 'I concur, fabolous article', user: @admin, post: @posts.last)
+Comment.create!(content: 'Does anyone ever stare into the sky and wonder what this is all about?', user: @admin2,
+                post: @posts.last)
+@comments = Comment.all
 
 Product.create!(name: 'Head Gear', category: 'Gear', brand: 'Everlast', image_url: 'https://res.cloudinary.com/dyfvqwppd/image/upload/v1633465029/everlast_head_gear_dfeihx.jpg',
                 review: Faker::Lorem.paragraph(sentence_count: 4, supplemental: true, random_sentences_to_add: 4), user: @admin)
