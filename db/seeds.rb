@@ -24,9 +24,7 @@ Post.create!(title: 'How to be respectful',
 
 @posts = Post.all
 
-@comments = 
-
-Comment.create!(content: 'What a terrific Article, You should get paid to write.', user: @admin, post: @posts.first)
+@comments = Comment.create!(content: 'What a terrific Article, You should get paid to write.', user: @admin, post: @posts.first)
 
 Product.create!(name: 'Head Gear', category: 'Gear', brand: 'Everlast', image_url: 'https://res.cloudinary.com/dyfvqwppd/image/upload/v1633465029/everlast_head_gear_dfeihx.jpg',
                 review: Faker::Lorem.paragraph(sentence_count: 4, supplemental: true, random_sentences_to_add: 4), user: @admin)
