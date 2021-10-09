@@ -13,7 +13,7 @@ import {
   verifyUser,
   removeToken,
 } from "./services/auth"
-import LandingPage from "./components/LandingPage/LandingPage"
+// import LandingPage from "./components/LandingPage/LandingPage"
 
 function App() {
   const [currentUser, setCurrentUser] = useState(null)

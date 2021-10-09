@@ -23,7 +23,7 @@ export default function CreatePost(props) {
         method="post"
         onSubmit={(e) => {
           e.preventDefault()
-          props.handleProductCreate(formData)
+          props.handlePostCreate(formData)
         }}
       >
         <h2>Create a Post</h2>

@@ -72,13 +72,13 @@ export default function MainContainer(props) {
 
   const handlePostCreate = async (postData) => {
     const newPost = await createPost(postData)
-    setProducts((prevState) => [...prevState, newPost])
+    setPosts((prevState) => [...prevState, newPost])
     history.push("/posts")
   }
 
   const handlePostDelete = async (id) => {
     await deletePost(id)
-    setProducts((prevState) => prevState.filter((post) => post.id !== id))
+    setPosts((prevState) => prevState.filter((post) => post.id !== id))
     history.push("/posts")
   }
 
