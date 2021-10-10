@@ -36,12 +36,16 @@
 }
 
 .welcome-info h4 {
-  color: #577eeb;
+  color: white;
   font-weight: 600;
 }
 
 .quick-look {
-  color: #577eeb;
+  color: white;
+}
+
+.quick-look-essentials h1 {
+  color: white;
 }
 
 .carousel-item img {
@@ -109,6 +113,15 @@
     /* height: 450px; */
     width: 60%;
     border-radius: 15px;
+  }
+  .quick-look h1 {
+    color: white;
+    font-size: 20px;
+  }
+
+  .quick-look-essentials h1 {
+    color: white;
+    font-size: 20px;
   }
 
   .icon-container {

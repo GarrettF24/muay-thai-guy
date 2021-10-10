@@ -69,7 +69,7 @@ export default function LandingPage(props) {
             </Carousel.Item>
           </Carousel>
         </div>
-        <div className="quick-look">
+        <div className="quick-look-essentials">
           <h1>Home Dojo Essentials</h1>
         </div>
 

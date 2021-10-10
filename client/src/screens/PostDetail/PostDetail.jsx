@@ -41,10 +41,15 @@ export default function PostDetail(props) {
       </div>
       {/* <div>
         {post?.comments.map((comment) => (
-          <div className="comments">
-            <p> User: {comment.user.username}</p>
-            <p>{comment.content}</p>
-          </div>
+          <>
+            <div className="created">
+              <p>{comment.created_at}</p>
+            </div>
+            <div className="comments">
+              <p> User: {comment.user.username}</p>
+              <p>{comment.content}</p>
+            </div>
+          </>
         ))}
       </div> */}
     </div>
