@@ -17,7 +17,7 @@
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
   margin: 0 auto;
   background-image: url("../../assets/ring_square.png");
   background-repeat: no-repeat;
@@ -46,6 +46,7 @@
   .product-detail-page {
     flex-direction: column;
     background: none;
+    /* max-width: 100vh; */
   }
 
   .product-image {

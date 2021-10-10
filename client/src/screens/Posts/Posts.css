@@ -27,6 +27,7 @@
 @media only screen and (max-width: 575px) {
   .posts-container {
     width: 100%;
+    background: none;
   }
   .post-card-component {
     width: 80%;
