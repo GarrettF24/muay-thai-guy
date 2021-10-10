@@ -39,14 +39,14 @@ export default function PostDetail(props) {
           </div>
         ) : null}
       </div>
-      <div>
+      {/* <div>
         {post?.comments.map((comment) => (
           <div className="comments">
             <p> User: {comment.user.username}</p>
             <p>{comment.content}</p>
           </div>
         ))}
-      </div>
+      </div> */}
     </div>
   )
 }
