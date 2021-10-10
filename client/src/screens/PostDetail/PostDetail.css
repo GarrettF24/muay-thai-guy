@@ -27,14 +27,17 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  width: 80%;
 }
 
 .post-title h1 {
   color: white;
+  background-color: rgba(0, 0, 0, 0.637);
 }
 
 .post-content {
   width: 70%;
+  background-color: rgba(0, 0, 0, 0.637);
 }
 
 .post-content p {

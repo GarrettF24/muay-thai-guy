@@ -4,7 +4,7 @@
   flex-direction: column;
   align-items: center;
   color: white;
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
   background-image: url("../../assets/ring_square.png");
   background-repeat: no-repeat;
@@ -16,6 +16,7 @@
   width: 80%;
   margin: 0 auto;
   font-size: larger;
+  background-color: rgba(0, 0, 0, 0.637);
 }
 
 @media only screen and (max-width: 575px) {
